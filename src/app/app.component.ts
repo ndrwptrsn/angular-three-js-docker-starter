@@ -7,7 +7,8 @@ import * as THREE from 'three';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    @ViewChild('rendererContainer') rendererContainer: ElementRef;
+    @ViewChild('rendererContainer')
+    rendererContainer: ElementRef;
 
     renderer = new THREE.WebGLRenderer({ alpha: true });
     scene = null;
@@ -21,7 +22,7 @@ export class AppComponent {
         this.camera.position.z = 1000;
 
         let geometry = new THREE.BoxGeometry(20, 200, 200);
-        const material = new THREE.MeshDistanceMaterial({color: 0xff0000, wireframe: true});
+        const material = new THREE.MeshDistanceMaterial();
         this.mesh = new THREE.Mesh(geometry, material);
 
         this.scene.add(this.mesh);
