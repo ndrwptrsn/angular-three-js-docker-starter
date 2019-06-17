@@ -7,7 +7,7 @@ import * as THREE from 'three';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    @ViewChild('rendererContainer')
+    @ViewChild('rendererContainer', {static: false})
     rendererContainer: ElementRef;
 
     renderer = new THREE.WebGLRenderer({ alpha: true });
