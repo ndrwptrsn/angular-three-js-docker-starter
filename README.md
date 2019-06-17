@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
+
+# Commands
+Spin up app
+docker-compose build
+docker-compose run --rm node npm install
+
+docker-compose up
+
+Generate a component
+docker-compose run --rm node ng generate components/[name]
+
+Check docker instances
+docker ps
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
